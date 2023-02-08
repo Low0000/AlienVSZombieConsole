@@ -15,8 +15,11 @@ Please provide the YouTube link to your [Video Demo](https://www.youtube.com/wat
 
 ## Compilation Instructions
 
-
+## For First Part
 g++ firstPart.cpp -o firstPart
+
+## For main.cpp (Second Part)
+g++ main.cpp -o main -lwinmm
 
 
 ## User Manual
