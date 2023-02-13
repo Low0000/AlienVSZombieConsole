@@ -1,5 +1,10 @@
 # Alien vs. Zombie
 
+#Sample Output of this game
+![Screenshot_23](https://user-images.githubusercontent.com/123613860/218414554-cf010b02-75ad-461f-ba4a-a2daf7fe4288.png)
+
+![Screenshot_24](https://user-images.githubusercontent.com/123613860/218414570-060b4c72-400f-4773-a81b-dbc1c559c4b2.png)
+
 
 # Introduction of this game
 
