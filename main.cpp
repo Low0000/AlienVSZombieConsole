@@ -177,7 +177,7 @@ vector<string> gameTimeList;
 // ------------------------------------ Push game log into a vector ----------------------------------- 
 void logPush(string log)
 {
-    while(log.length()!= 60)
+    while(log.length()!= 57)
     {
         log += " ";
     }
@@ -508,9 +508,8 @@ void printMap()
 
     showCursor(false);
 
-    cout << "{ ";
-    cout<< "\033[4mAlien vs Zombie\033[0m";
-    cout << " }" << endl << endl;
+    cout << endl;
+
     for(int i = 0; i < gameMap.size(); i++)
     {
         for(int j = 0; j < gameMap[i].size(); j++)
@@ -676,8 +675,8 @@ void printAll()
 {
     showCursor(false);
     xScreen();
-    printMap();
     printMapDetails();
+    printMap();
     turnGuide();
     showCursor(true);
 }
@@ -1177,15 +1176,15 @@ void initMap()
     
 
     //push game control guidance into gamemap vector
-    gameMap[0].push_back("         ?** Game Control **?           ");
-    gameMap[1].push_back("  => [WASD]  - Move Alien               ");
-    gameMap[2].push_back("  => [P]     - Change Arrow Direction   ");
-    gameMap[3].push_back("  => [F1]    - HELP                     ");
-    gameMap[4].push_back("  => [F2]    - SAVE                     ");
-    gameMap[5].push_back("  => [F3]    - LOAD                     ");
-    gameMap[6].push_back("  => [F4]    - REFRESH SCREEN           ");
-    gameMap[7].push_back("  => [F5]    - RESTART                  ");
-    gameMap[8].push_back("  => [F6]    - EXIT                     ");
+    gameMap[0].push_back("         ?** Game Control **?         ");
+    gameMap[1].push_back("  => [WASD]  - Move Alien             ");
+    gameMap[2].push_back("  => [P]     - Change Arrow Direction ");
+    gameMap[3].push_back("  => [F1]    - HELP                   ");
+    gameMap[4].push_back("  => [F2]    - SAVE                   ");
+    gameMap[5].push_back("  => [F3]    - LOAD                   ");
+    gameMap[6].push_back("  => [F4]    - REFRESH SCREEN         ");
+    gameMap[7].push_back("  => [F5]    - RESTART                ");
+    gameMap[8].push_back("  => [F6]    - EXIT                   ");
     
     
     //push game log into gamemap vector
@@ -1468,7 +1467,7 @@ void podAttack()
 {
     vector<vector<int>> c1;
     vector<int> alienPos;
-    vector<int> alienNum;
+    vector<int> zombieNum;
     vector<int> tempList;
     vector<float> shortestDis;
     float distance, temp, xDis, yDis;
@@ -1487,7 +1486,7 @@ void podAttack()
             tempList.push_back(stoi(characterDetails[i][4]));
             tempList.push_back(stoi(characterDetails[i][5]));
             c1.push_back(tempList);
-            alienNum.push_back(i);
+            zombieNum.push_back(i);
         }
     }
 
@@ -1514,7 +1513,7 @@ void podAttack()
     {
         if(shortestDis[i] == nearest)
         {
-            nearestZombie = alienNum[i];
+            nearestZombie = zombieNum[i];
             break;
         }
     }
@@ -1888,7 +1887,7 @@ void zombieMove()
     }
     else
     {
-        gameLog = "Zombie " + to_string(currentZombie) + " is unable to attack Alien. (Too Far).";
+        gameLog = "Zombie " + to_string(currentZombie) + " unable attack Alien. Too Far.";
         logPrint("GAME LOG: " + gameLog);
         logPush(getTimeNow() + gameLog);
     }
@@ -2635,7 +2634,6 @@ void setColor(int fc , int bc)
 
 void setCursor(int x, int y) {
     cout << "\033[" << y << ";" << x << "H";
-    // printf("\033[%d;%dH", y, x);
     fflush(stdout);
 }
 
@@ -2644,11 +2642,9 @@ void setCursor(int x, int y) {
 // -----------------------------
 void clearLine(int y)
 {
-
     setCursor(0, y);
     printf("\033[K");
     fflush(stdout); //push what print on console out immediate
-
 }
 
 // -------------------------------- show cursor ---------------------------------------------------
@@ -2744,4 +2740,3 @@ int main()
 
     sPause();
 }
-
