@@ -165,7 +165,7 @@ vector<vector<string>> gameMap;
 // };
 vector<vector<string>> characterDetails;
 //  = {
-//     {"-> ","Alien   :", "100", "0"},
+//     {"-> ","Alien   :", "100", "0"},`
 //     {"   ", "250", "5", "1"},
 //     {"   ", "50","15","3" },
 // };
@@ -508,8 +508,6 @@ void printMap()
 
     showCursor(false);
 
-    cout << endl;
-
     for(int i = 0; i < gameMap.size(); i++)
     {
         for(int j = 0; j < gameMap[i].size(); j++)
@@ -596,10 +594,10 @@ void printMap()
 
     for(int y = 0; y < screenHeight - gameMap.size(); y++)
     {
-        clearLine(gameMap.size()+y+3);
+        clearLine(gameMap.size()+y+1);
     }
     
-    setCursor(0, gameMap.size()+3);
+    setCursor(0, gameMap.size()+1);
     showCursor(true);
 
 
@@ -675,8 +673,8 @@ void printAll()
 {
     showCursor(false);
     xScreen();
-    printMapDetails();
     printMap();
+    printMapDetails();
     turnGuide();
     showCursor(true);
 }
@@ -2634,6 +2632,7 @@ void setColor(int fc , int bc)
 
 void setCursor(int x, int y) {
     cout << "\033[" << y << ";" << x << "H";
+    // printf("\033[%d;%dH", y, x);
     fflush(stdout);
 }
 
@@ -2642,9 +2641,11 @@ void setCursor(int x, int y) {
 // -----------------------------
 void clearLine(int y)
 {
+
     setCursor(0, y);
     printf("\033[K");
     fflush(stdout); //push what print on console out immediate
+
 }
 
 // -------------------------------- show cursor ---------------------------------------------------
