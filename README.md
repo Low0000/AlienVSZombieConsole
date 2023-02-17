@@ -28,6 +28,22 @@ g++ main.cpp -o main -lwinmm
 
 
 ## User Manual
+1. Users need to choose 'y' -YES / 'n'-NO For edit the settings of the game.
+2. If users press 'n', then the setting of game will remain as default.
+3. If users press 'y', then user need to input number of zombie which does not more than 9 zombies.
+4. Users need to input the row and column of the game map with specific rules such as only odd number accepted / minimum number for row and column is 5 / Maximum number of row and column is due to users' Windows display size.
+5. Game Map will auto generated with an alien at center of game map randomly placement of game objects / zombies.
+6. The maxmimum life for the alien will be always initialized 100 and 0 attack. The zombies' life / health / attack range will be randomize.
+7. Users can using [WASD] key on keyboard to control the movement of the alien.
+8. Users can press [P] key to change the direction of game object: [Arrow] to change the next movement of the alien. 
+9. Users can press [F1] key to call out help function if users face any doubts.
+10. Users can press [F2] key to save the progress of current game by key in prefer filename with filename extension [.txt].
+11. Users can press [F3] key to load the saved game progress by key in the filename without filename extension [.txt].
+12. Users can press [F4] key to refresh the screen when users face any game map layout problem.
+13. Users can press [F5] key to restart the game with current settings of the game which is same number of row / column / quantity zombies.
+14. Users can press [F6] key to exit the game.
+15. If users accidentally exit the game, this game will also autosave your latest progress of your game.
+16. Users can press 'y' in the start page of this game when AutoSync dialog box pop out. 
 
 
 Will update with submission of Part 2.
