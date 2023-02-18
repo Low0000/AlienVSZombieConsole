@@ -2,7 +2,7 @@
 
 ## Video Demo
 
-Please provide the YouTube link to your [Video Demo](https://youtube.com).
+Please provide the YouTube link to your [Video Demo](https://youtu.be/kB-EhNpGuqU).
 
 ## Minimum Requirements
 
@@ -14,37 +14,31 @@ List all the features completed.
 2. Cool Feature #2
 3. *add more*
 
-### To Do
-
-List all the features not yet done. Remove this section if there is no incomplete requirements.
-
-1. Cool Feature #1
-2. *add more*
-
 ## Additional Features
 
 Describe the additional features that has been implemented.
 
 ## Contributions
 
-List down the contribution of each group members.
+### Nicholas Tiow Kai Bo
 
-For example:
+1. Saving of Game Map Data 
+2. Reading Progress of Saved Map
+3. Load Saved Game Progress Page
+4. Autosave / Autosync
+5. Save / Read Last Game Time
 
-### Tony Stark
+### Low Kai Yan
 
-1. Randomly generate game board.
-2. *add more*
-
-### Steve Rogers
-
-1. Zombie movement and attack behaviour.
-2. *add more*
-
-### Dr. Strange
-
-1. Implement all game objects.
-2. *add more*
+1. Alien Movement
+2. Pod Attack
+3. Zombie Attack
+4. User Command with Keyboard Control
+5. Control Arrow 
+6. Initialisation of color for ANSI Escape Code
+7. Set Color on Game Objects
+8. Game Log History 
+9. Main Function 
 
 ## Problems Encountered & Solutions
 
