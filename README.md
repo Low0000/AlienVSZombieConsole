@@ -15,7 +15,7 @@ Alien vs. Zombie is basically a role-play game that needs the path-planning and 
 There are some mysterious game objects such as rocks, arrow power, pod attack power and others that can help the alien become stronger in order to attack the zombies. 
 
 
-Please provide the YouTube link to your [Video Demo_Part 1](https://www.youtube.com/watch?v=klaqKXWuF1o) and [Video Demo_Part 2](https://youtu.be/kB-EhNpGuqU).
+YouTube link to our [Video Demo_Part 1](https://www.youtube.com/watch?v=klaqKXWuF1o) and [Video Demo_Part 2](https://youtu.be/kB-EhNpGuqU).
 
 
 ## Compilation Instructions
