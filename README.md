@@ -28,12 +28,6 @@ g++ main.cpp -o main -lwinmm
 
 
 ## User Manual
-1. Users need to choose 'y' -YES / 'n'-NO For edit the settings of the game.
-2. If users press 'n', then the setting of game will remain as default.
-3. If users press 'y', then user need to input number of zombie which does not more than 9 zombies.
-4. Users need to input the row and column of the game map with specific rules such as only odd number accepted / minimum number for row and column is 5 / Maximum number of row and column is due to users' Windows display size.
-5. Game Map will auto generated with an alien at center of game map randomly placement of game objects / zombies.
-
 ### Introduction of Game Objects and Zombies
 - Alien (A) was initialized to 100 life and 0 attack. 
 - Health pack (h) can help to add 20 life to alien.
@@ -43,6 +37,12 @@ g++ main.cpp -o main -lwinmm
 - Arrow power [^v<>] will change the direction of alien movement and add 20 attack to the alien.
 - Zombies' life and attack [Maximum number is 9] will be set to randomized.
 
+### Game Guide
+1. Users need to choose 'y' -YES / 'n'-NO For edit the settings of the game.
+2. If users press 'n', then the setting of game will remain as default.
+3. If users press 'y', then user need to input number of zombie which does not more than 9 zombies.
+4. Users need to input the row and column of the game map with specific rules such as only odd number accepted / minimum number for row and column is 5 / Maximum number of row and column is due to users' Windows display size.
+5. Game Map will auto generated with an alien at center of game map randomly placement of game objects / zombies.
 6. The maxmimum life for the alien will be always initialized 100 and 0 attack. The zombies' life / health / attack range will be randomize.
 7. Users can using [WASD] key on keyboard to control the movement of the alien.
 8. Users can press [P] key to change the direction of game object: [Arrow] to change the next movement of the alien. 
