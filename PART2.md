@@ -10,11 +10,12 @@ Link to our demo video [Video Demo](https://youtu.be/kB-EhNpGuqU).
 
 ### Completed
 
-List all the features completed.
-
-1. Cool Feature #1
-2. Cool Feature #2
-3. *add more*
+1. Overview of Alien vs. Zombie
+2. Resizeable Game Board
+3. Game Characters (Movement Of Alien And Zombies and Multiple Zombies)
+6. Randomly Placement of Game Objects 
+7. Game Controls (Saving and Loading Game File)
+8. Game Flow
 
 ## Additional Features
 
