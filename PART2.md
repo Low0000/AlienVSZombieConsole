@@ -19,7 +19,9 @@ Link to our demo video [Video Demo](https://youtu.be/kB-EhNpGuqU).
 
 ## Additional Features
 
-Describe the additional features that has been implemented.
+1. Sound effects.
+2. Use keyboard arrow key to control alien movement and change direction of the arrow power instead of typing out arrow.
+3. Usage of different colors on different game objects so can differentiate them easily by using ANSI escape code.
 
 ## Contributions
 
@@ -46,3 +48,5 @@ Describe the additional features that has been implemented.
 ## Problems Encountered & Solutions
 
 Describe the problems encountered and provide the solutions / plan for the solutions.
+1. Using the keyboard arrow key for movement of alien and changing of direction on the arrow power. The solution found is using getch.
+2. Adding different colors to the alien, zombies and game objects for a more pleasant game interface. The solution found is using ANSI Escape Code.
