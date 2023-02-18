@@ -2,9 +2,11 @@
 
 ## Video Demo
 
-Please provide the YouTube link to your [Video Demo](https://youtu.be/kB-EhNpGuqU).
+Link to our demo video [Video Demo](https://youtu.be/kB-EhNpGuqU).
 
 ## Minimum Requirements
+- **ONLY** For Windows Operating System
+- MINGW Compiler installed For Compilation.
 
 ### Completed
 
