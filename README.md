@@ -25,6 +25,7 @@ g++ firstPart.cpp -o firstPart
 
 ## For main.cpp (Second Part)
 ATTENTION: RUN USING EXECUTABLE FILE IN FILE EXPLORER NOT JUST RUNNING USING VSCODE.
+
 g++ main.cpp -o main -lwinmm
 
 
